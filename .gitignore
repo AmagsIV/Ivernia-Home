@@ -1,0 +1,10 @@
+.Rproj.user
+.Rhistory
+*.RData
+.Ruserdata
+*.csv
+*.Rdata
+*.rds
+*.ods
+*.xlsx
+Model1.bin

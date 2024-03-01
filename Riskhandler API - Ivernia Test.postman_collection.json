@@ -1,0 +1,129 @@
+{
+	"info": {
+		"_postman_id": "f8bf4e10-0aa2-442d-85a6-06dec11862a2",
+		"name": "Riskhandler API - Ivernia Test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "30617259"
+	},
+	"item": [
+		{
+			"name": "Get Live Products",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://iverniatest.riskhandler.com/api/products/live",
+					"protocol": "https",
+					"host": [
+						"iverniatest",
+						"riskhandler",
+						"com"
+					],
+					"path": [
+						"api",
+						"products",
+						"live"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Latest Transactions",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://iverniatest.riskhandler.com/api/products/080c5e2b-73bc-4e54-be4b-bf8e3b5924ab/transactions/latest",
+					"protocol": "https",
+					"host": [
+						"iverniatest",
+						"riskhandler",
+						"com"
+					],
+					"path": [
+						"api",
+						"products",
+						"080c5e2b-73bc-4e54-be4b-bf8e3b5924ab",
+						"transactions",
+						"latest"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Transactions By Date Range",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://iverniatest.riskhandler.com/api/products/1264e2f9-8a18-4b28-8d97-91b8836e3ae8/transactions?fromDate=2023-10-01&toDate=2023-10-17",
+					"protocol": "https",
+					"host": [
+						"iverniatest",
+						"riskhandler",
+						"com"
+					],
+					"path": [
+						"api",
+						"products",
+						"1264e2f9-8a18-4b28-8d97-91b8836e3ae8",
+						"transactions"
+					],
+					"query": [
+						{
+							"key": "fromDate",
+							"value": "2023-10-01"
+						},
+						{
+							"key": "toDate",
+							"value": "2023-10-17"
+						},
+						{
+							"key": "page",
+							"value": "2",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "basic",
+		"basic": [
+			{
+				"key": "password",
+				"value": "clientSecretHere",
+				"type": "string"
+			},
+			{
+				"key": "username",
+				"value": "apiKeyHere",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
